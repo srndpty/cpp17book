@@ -166,11 +166,16 @@ int main()
 autoはトップレベルのCV修飾子を消すが、decltype(auto)は保持する。
 
 ~~~cpp
+const volatile int f()
+{
+    return 0;
+}
+
 int main()
 {
     // int
     auto x1 = f() ;
-    // int &
+    // const volatile int
     decltype(auto) x2 = f() ;
 }
 ~~~
