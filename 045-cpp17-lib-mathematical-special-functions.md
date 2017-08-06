@@ -1,10 +1,10 @@
-# 数学用の特殊関数群
+# 数学の特殊関数群
 
-C++17では数学用の特殊関数群(mathematical special functions)が追加された。
+C++17では数学の特殊関数群(mathematical special functions)が追加された。
 
-数学用の特殊関数は、いずれも実引数をとって、規定の計算をし、結果を浮動小数点数型の戻り値として返す。
+数学の特殊関数は、いずれも実引数をとって、規定の計算をし、結果を浮動小数点数型の戻り値として返す。
 
-数学用の特殊関数はdouble, float, long double型の3つのオーバーロードがある。それぞれ、関数名の最後に、何もなし、f, lというサフィックスで表現されている。
+数学の特殊関数はdouble, float, long double型の3つのオーバーロードがある。それぞれ、関数名の最後に、何もなし、f, lというサフィックスで表現されている。
 
 ~~~c++
 double      function_name() ;   // 何もなし
@@ -12,10 +12,10 @@ float       function_namef() ;  // f
 long double function_namel() ;  // l
 ~~~
 
-数学用の特殊関数の説明は、関数の宣言、効果、戻り値、注意がある。
+数学の特殊関数の説明は、関数の宣言、効果、戻り値、注意がある。
 
 
-もし、数学用の特殊関数に渡した実引数がNaN(Not a Number)である場合、関数の戻り値もNaNになる。ただし定義域エラーは起こらない。
+もし、数学の特殊関数に渡した実引数がNaN(Not a Number)である場合、関数の戻り値もNaNになる。ただし定義域エラーは起こらない。
 
 それ以外の場合で、関数が定義域エラーを返すべきときは、
 
@@ -511,10 +511,10 @@ $$
 
 注意： n \>= 128 のときの関数の呼び出しの効果は実装定義である。
 
-[第一種円柱ベッセル関数][#sf.cmath.cyl_bessel_j]も参照。
+[第一種円柱ベッセル関数](#sf.cmath.cyl_bessel_j)も参照。
 
 
-##　球面陪ルジャンドル関数(Spherical associated Legendre functions)
+## 球面陪ルジャンドル関数(Spherical associated Legendre functions)
 
 ~~~c++
 double       sph_legendre(unsigned l, unsigned m, double theta);
